@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zero Waste – Chiqindisiz Hayot Sari</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+* {margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif;}
+body {line-height:1.6; color:#333; background:#f4f9f4; scroll-behavior: smooth;}
+header {background:#4CAF50; color:white; padding:40px 20px; text-align:center;}
+header h1 {font-size:2.5rem; animation: fadeInDown 1s;}
+header p {font-size:1.2rem; margin-top:10px; animation: fadeInUp 1s;}
+nav {background:#2e7d32; display:flex; justify-content:center; flex-wrap:wrap; position:sticky; top:0; z-index:100;}
+nav a {color:white; text-decoration:none; padding:15px 25px; transition:0.3s;}
+nav a:hover {background:#1b5e20;}
+section {padding:60px 20px; max-width:1100px; margin:0 auto; opacity:0; transform: translateY(30px); transition: all 1s ease;}
+section.visible {opacity:1; transform: translateY(0);}
+h2 {color:#2e7d32; margin-bottom:25px; text-align:center;}
+.highlight {color:#388E3C; font-weight:700;}
+ul {margin:20px 0; padding-left:20px;}
+ul li {margin-bottom:12px; font-size:1.05rem;}
+.five-r {display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:25px; margin-top:30px;}
+.r-card {background:white; padding:25px; border-radius:15px; box-shadow:0 6px 12px rgba(0,0,0,0.1); text-align:center; transition: transform 0.3s, box-shadow 0.3s;}
+.r-card i {font-size:3rem; color:#4CAF50; margin-bottom:15px;}
+.r-card:hover {transform: translateY(-10px); box-shadow:0 12px 20px rgba(0,0,0,0.2);}
+.cta {text-align:center; margin-top:30px;}
+.cta button {background:#388E3C; color:white; padding:15px 30px; border:none; border-radius:10px; cursor:pointer; font-weight:700; font-size:1.1rem; transition:0.3s;}
+.cta button:hover {background:#2e7d32;}
+footer {background:#2e7d32; color:white; text-align:center; padding:25px; margin-top:50px;}
+/* Modal */
+#contactModal {display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:200;}
+#contactModal .modal-content {background:white; padding:30px; border-radius:10px; max-width:400px; text-align:center; position:relative;}
+#contactModal .modal-content h3 {margin-bottom:20px;}
+#contactModal .modal-content a {display:block; margin:10px 0; text-decoration:none; color:#388E3C; font-weight:600;}
+#contactModal .modal-content button {margin-top:20px; padding:10px 20px; background:#388E3C; color:white; border:none; border-radius:5px; cursor:pointer;}
+@media(max-width:600px){header h1{font-size:2rem;} nav a{padding:10px; font-size:0.9rem;}}
+@keyframes fadeInDown {from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);}}
+@keyframes fadeInUp {from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);}}
+</style>
+</head>
+<body>
 
+<header>
+  <h1>🌍 Zero Waste – Chiqindisiz Hayot Sari!</h1>
+  <p>Tabiat bizniki emas – biz tabiatnikimiz.</p>
+</header>
+
+<nav>
+  <a href="#about">Loyiha haqida</a>
+  <a href="#goals">Maqsadlar</a>
+  <a href="#practical">Amaliy qadamlar</a>
+  <a href="#join">Qo‘shiling!</a>
+</nav>
+
+<section id="about">
+  <h2>Loyiha haqida</h2>
+  <p>Bugungi kunda sayyoramiz jiddiy ekologik sinovdan o‘tmoqda. Har yili dunyoda 2 milliard tonnadan ortiq chiqindi hosil bo‘lmoqda (World Bank ma’lumotlari bo‘yicha). O‘zbekistonda esa yiliga 4–5 million tonna chiqindi paydo bo‘ladi va bu miqdor har yili o‘sib bormoqda.</p>
+  <p>Plastik chiqindilarning katta qismi tabiatda 100 yildan 500 yilgacha parchalanmay qoladi. Natijada okeanlar, daryolar, yer osti suvlari ifloslanmoqda, hayvonlar (ayniqsa, baliqlar va qushlar) plastik qoldiqlarni yutib o‘lib ketmoqda, havo va tuproq zaharlanmoqda. Iqlim o‘zgarishi esa bu muammoni yanada kuchaytirmoqda – issiqxona gazlari ko‘payib, ob-havo ekstremal holatlarga olib kelmoqda.</p>
+  <p>Biz – <span class="highlight">"Yashil Avlod"</span> ko‘ngilli jamoasi – bu holatga befarq qarab turolmaymiz. Shuning uchun <span class="highlight">“Zero Waste”</span> loyihasini boshladik. Zero Waste deganda shunchaki chiqindini kamaytirish emas, balki chiqindini umuman hosil qilmaslikka intilish tushuniladi. Bu hayot tarzi, bu mas’uliyat va bu kelajak avlodlarga toza sayyora qoldirish uchun qilingan va’da.</p>
+</section>
+
+<section id="goals">
+  <h2>Loyihaning asosiy maqsadlari</h2>
+  <ul>
+    <li>Chiqindini imkon qadar kamaytirish va tabiatga zarar yetkazmaslik</li>
+    <li>Qayta foydalanish va qayta ishlash madaniyatini shakllantirish</li>
+    <li>Maktab o‘quvchilari orasida ekologik ongni oshirish</li>
+    <li>Birinchi bosqichda o‘z maktabimizda chiqindisiz tizim joriy etish</li>
+    <li>Keyinchalik tajribani tuman, shahar va viloyat darajasiga tarqatish</li>
+  </ul>
+
+  <h3>Zero Waste tamoyillari – 5R qoidasiga asoslanadi:</h3>
+  <div class="five-r">
+    <div class="r-card"><i class="fas fa-ban"></i><h4>Rad etish (Refuse)</h4><p>Keraksiz narsalarni rad etish: do‘konda plastik paket olish o‘rniga mato sumka, bir martalik qahva stakanlaridan voz kechish.</p></div>
+    <div class="r-card"><i class="fas fa-compress"></i><h4>Kamaytirish (Reduce)</h4><p>Faqat haqiqatan kerak bo‘lgan narsalarni sotib olish, ortiqcha oziq-ovqat xarid qilmaslik, kiyim-kechakni uzoq muddat ishlatish.</p></div>
+    <div class="r-card"><i class="fas fa-redo"></i><h4>Qayta foydalanish (Reuse)</h4><p>Bir martalik buyumlarni qayta ishlatish: shisha suv idishlarini to‘ldirish, eski kiyimlarni yangi buyumga aylantirish.</p></div>
+    <div class="r-card"><i class="fas fa-recycle"></i><h4>Qayta ishlash (Recycle)</h4><p>Chiqindilarni ajratib, maxsus punktlarga topshirish: plastik, qog‘oz, shisha, metall va batareyalar.</p></div>
+    <div class="r-card"><i class="fas fa-leaf"></i><h4>Kompost qilish (Rot)</h4><p>Organik chiqindilarni (sabzavot, meva qobig‘i, choy barglari) kompostga aylantirish.</p></div>
+  </div>
+</section>
+
+<section id="practical">
+  <h2>Amaliy qadamlarimiz</h2>
+  <ul>
+    <li>Har bir qavatda va sinflarda 3 xil rangli chiqindi qutilari: ko‘k (qog‘oz/karton), sariq (plastik/metall), yashil (organik)</li>
+    <li>“1 hafta plastikdan voz kechish” aksiyasi</li>
+    <li>Eco-klub ochish – haftalik uchrashuvlar, ekologik darslar va tajribalar</li>
+    <li>“Eng toza sinf” tanlovi – sertifikat va sovg‘alar</li>
+    <li>Hovlida daraxt va gul ekish aksiyasi</li>
+    <li>Energiya va suvni tejash qoidalari</li>
+  </ul>
+  <p>Kelajakda tuman hokimiyati, mahalla faollari, boshqa maktablar va korxonalar bilan hamkorlikni rejalashtirmoqdamiz. Har bir kichik harakat katta natija beradi – masalan, maktabimizdagi 1000 nafar o‘quvchi kuniga faqat bitta plastik paketdan voz kechsa, yil davomida 365 000 ta paket tabiatga tushmaydi!</p>
+</section>
+
+<section id="join">
+  <h2>Qo‘shiling!</h2>
+  <div class="cta">
+    <p>Eco-klubga yoziling, aksiyalarda qatnashing, chiqindi ajratish tizimini joriy eting yoki shunchaki do‘stlaringizga ayting. Har biringizning hissangiz muhim!</p><br>
+    <button id="contactBtn"><i class="fas fa-envelope"></i> Biz bilan bog‘lanish</button>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="contactModal">
+  <div class="modal-content">
+    <h3>Biz bilan bog‘laning</h3>
+    <p><a href="https://t.me/aliwerov1" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a></p>
+    <p><a href="tel:+998 87 163 53 23"><i class="fas fa-phone"></i> +998 87 163 53 23</a></p>
+    <button id="closeModal">Yopish</button>
+  </div>
+</div>
+
+<footer>
+  <p>Zero Waste – bu nafaqat loyiha, bu yangi hayot tarzi. ♻️</p>
+  <p>&copy; 2026 Yashil Avlod</p>
+</footer>
+
+<script>
+// Scroll animatsiya
+const sections = document.querySelectorAll('section');
+window.addEventListener('scroll', () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){ sec.classList.add('visible'); }
+  });
+});
+
+// Modal oynasi
+const contactBtn = document.getElementById('contactBtn');
+const contactModal = document.getElementById('contactModal');
+const closeModal = document.getElementById('closeModal');
+
+contactBtn.addEventListener('click', () => {
+  contactModal.style.display = 'flex';
+});
+closeModal.addEventListener('click', () => {
+  contactModal.style.display = 'none';
+});
+contactModal.addEventListener('click', (e) => {
+  if(e.target === contactModal) contactModal.style.display = 'none';
+});
+</script>
+
+</body>
+</html>
